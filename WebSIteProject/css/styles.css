@@ -261,3 +261,23 @@ a {
     }
 
 }
+
+
+.plan_card_header{
+    background-color: var(--color-secondary);
+    color: #fff;
+    border: 0;
+    border-radius: 7px 7px 0 0;
+    width:30%;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    padding:2rem 3rem;
+}
+.plan_card_body{
+    background-color:#fff;
+    color:var(--color-headings);
+    border: 0;
+    margin-left: 2rem;
+    padding:2rem 3rem;
+    
+}
