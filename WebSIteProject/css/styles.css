@@ -7,6 +7,11 @@
     --color-border:#ccc;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 html {
     font-size: 62.5%;
 }
@@ -262,22 +267,41 @@ a {
 
 }
 
+.plan_popular .plan_card_header{
+    position: relative;
+}
+.plan_popular .plan_card_header::after{
+    content:url(../images/popular.svg);
+    width: 40px;
+    display: inline-block;
+    position: absolute;
+    top: -6px;
+    right: 5%;
 
+}
+
+
+.plans{
+    width:30%;
+    margin-left: 2rem;
+    box-shadow: 0 20px 40px 0px #eee3e3;
+}
 .plan_card_header{
     background-color: var(--color-secondary);
     color: #fff;
     border: 0;
     border-radius: 7px 7px 0 0;
-    width:30%;
+    
     margin-top: 2rem;
-    margin-left: 2rem;
+   
     padding:2rem 3rem;
 }
 .plan_card_body{
     background-color:#fff;
     color:var(--color-headings);
     border: 0;
-    margin-left: 2rem;
-    padding:2rem 3rem;
+    
+    padding:2rem 3rem;  
     
 }
+
