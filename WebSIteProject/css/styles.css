@@ -291,9 +291,7 @@ a {
     color: #fff;
     border: 0;
     border-radius: 7px 7px 0 0;
-    
     margin-top: 2rem;
-   
     padding:2rem 3rem;
 }
 .plan_card_body{
@@ -305,3 +303,17 @@ a {
     
 }
 
+/* Media  */
+
+.media{
+    display: flex;
+}
+.media_title{
+    margin-top: 0;
+}
+.media_body{
+    margin: 0 2rem ;
+}
+.media_image{
+ margin-top:1rem ;
+} 
