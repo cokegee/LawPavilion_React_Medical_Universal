@@ -360,3 +360,13 @@ a {
     
     }
 }
+
+.grid{
+    display: grid;
+}
+@media screen and (min-width: 758px) {
+    .grid_1x2 {
+ 
+       grid-template-columns: 1fr 1fr 1fr;
+    }
+}
