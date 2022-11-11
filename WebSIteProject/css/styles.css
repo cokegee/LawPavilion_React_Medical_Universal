@@ -232,6 +232,10 @@ a {
     margin: 1rem 0;
 }
 
+.btn_stretched{
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
 .btn_outline{
     background-color: white;
     border: 2px solid var(--color-headings);
@@ -413,5 +417,40 @@ body .testimonial {
     }
     .testimonial .quote{
         margin-left: 6rem;
+    }
+}
+
+.callout{
+    padding: 4rem;
+    border-radius: 5px;
+}
+.callout_primary{
+    background: var(--color-primary);
+    color: #fff;
+}
+.callout_heading{
+    color: #fff;
+    margin-top: 0;
+    font-size: 3rem;
+}
+.callout .btn{
+justify-self:center;
+align-self: center;
+}
+
+.callout_content{
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .callout_content{
+        text-align: left;
+    }
+    .callout .btn{
+        justify-self:start;
+        margin: 0 2rem;
+     } 
+    .callout .grid_1x2{
+        grid-template-columns: 1fr auto;
     }
 }
