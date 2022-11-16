@@ -14,20 +14,24 @@
 </head>
 
 <body>
-<div class="collapsible collapsible_expanded">
-  <header class="collapsible_header">
-    <h2 class="collapsible_heading">Item 1</h2>
+<nav class="nav collapsible ">
+  <a href="/"><img src="images/logo.svg" alt="" class="fix_logo"></a>
+  
+    <svg class="icon icon_white nav_toggler">
+        <use xlink:href="icons/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav_list collapsible_content">
+        <li class="nav_item"><a href="#"></a>Hosting</li>
+        <li class="nav_item"><a href="#"></a>VPS</li>
+        <li class="nav_item"><a href="#"></a>Domain</li>
+        <li class="nav_item"><a href="#"></a>Pricing</li>
+      </ul>
+ 
+  
+</nav>
 
-      <img  class="icon icon_white collapsible_chevron" src="icons/chevron.svg" alt="">
-        
-   
-  </header>
-  <div class="collapsible_content">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cum praesentium tempore officia error magni. Maiores dolore molestiae asperiores dolorem minima, porro ut quod nam reprehenderit, ea magni inventore repudiandae.
-  </div>
-</div>
+
 <script src="js/main.js"></script>
-
 </body>
 
 </html>
