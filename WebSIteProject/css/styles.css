@@ -30,6 +30,7 @@ h2,
 h3 {
     color: var(--color-headings);
     margin-bottom: 1.5rem;
+    line-height: 1.1;
 }
 
 h1 {
@@ -553,4 +554,67 @@ margin: 0;
 .fix_logo{
     position: relative;
     top: 5px;
+}
+/* Blocks */
+.block {
+    --padding-vertical: 6rem;
+    padding: var(--padding-vertical) 2rem;
+  }
+  
+  .block_header {
+    text-align: center;
+  }
+  
+  .block_heading {
+    margin-top: 0;
+  }
+  
+  .block_dark {
+    background: #000;
+    color: #7b858b;
+  }
+  
+  .block_dark .block_heading {
+    color: #fff;
+  }
+  
+  .block_skewed_right {
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  }
+  
+  .block_skewed_left {
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  }
+  
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  
+
+  /* hero */
+  .hero{
+      clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+
+  }
+.hero_tagline{
+    font-size: 2rem;
+    color: #b9c3cf ;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+.hero_image{
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .block_header {
+        text-align:left;
+        align-self: center;
+      }
+    .hero{
+        padding-top: 0;
+    }
 }
