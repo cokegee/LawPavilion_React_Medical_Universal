@@ -292,6 +292,9 @@ a {
 
 }
 
+
+/* Plan cards */
+
 .plan_popular .plan_card_header_primary{
     position: relative;
     
@@ -362,12 +365,25 @@ a {
     visibility: hidden;
 }
 
-.plans{
-    position: relative;
-    
+
+.block_plans .grid{
+    gap: 8rem 4rem;
+}
+.card{
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-
+.plans:hover{
+    transform: scale(1.05);
+}
+.plan_popular:hover{
+    transform: scale(1.15);
+}
+.plans{
+    transition: transform .2s ease-out;
+    
+}
 @media screen and (min-width: 1024px) {
     .grid_1x3 {
  
@@ -380,7 +396,7 @@ a {
         margin-bottom: 0;
         
     }
-    .plan_card_header_primary{
+    /* .plan_card_header_primary{
         height: 210px;
         top: -50px;
     }
@@ -391,6 +407,9 @@ a {
     .popular_body{
         position: relative;
         top:-50px;
+    } */
+    .plan_popular{
+        transform: scale(1.1);
     }
 }
 
