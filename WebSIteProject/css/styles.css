@@ -107,12 +107,12 @@ a {
 }
 
 .badge_primary {
-    background: var(--color-primary);
+    background: #126de4;
     color: white;
 }
 
 .badge_secondary {
-    background: var(--color-secondary);
+    background: #02cdf1;
     color: white;
 }
 
@@ -292,10 +292,12 @@ a {
 
 }
 
-.plan_popular .plan_card_header{
+.plan_popular .plan_card_header_primary{
     position: relative;
+    
 }
-.plan_popular .plan_card_header::after{
+
+.plan_popular .plan_card_header_primary::after{
     content:url(../images/popular.svg);
     width: 40px;
     display: inline-block;
@@ -307,12 +309,24 @@ a {
 
 
 .plans{
-    width:30%;
+    width:auto;
     margin-left: 2rem;
     box-shadow: 0 20px 40px 0px #eee3e3;
+    white-space: nowrap;
 }
-.plan_card_header{
+
+.plan_card_header_secondary{
     background-color: var(--color-secondary);
+    color: #fff;
+    border: 0;
+    border-radius: 7px 7px 0 0;
+    margin-top: 2rem;
+    padding:2rem 3rem;
+    
+}
+
+.plan_card_header_primary{
+    background-color: var(--color-primary);
     color: #fff;
     border: 0;
     border-radius: 7px 7px 0 0;
@@ -323,10 +337,63 @@ a {
     background-color:#fff;
     color:var(--color-headings);
     border: 0;
-    
     padding:2rem 3rem;  
     
 }
+
+.plans .plan_text_big{
+    font-size:6rem  ;
+}
+.plans .plan_text_small{
+
+    font-size:2.4rem;
+    font-weight: 100;
+    margin-bottom: 0;
+    
+}
+
+.plans .plan_text_regular{
+    font-size:2.4rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.hidden_item{
+    visibility: hidden;
+}
+
+.plans{
+    position: relative;
+    
+}
+
+
+@media screen and (min-width: 1024px) {
+    .grid_1x3 {
+ 
+        grid-template-columns: 1fr 1fr 1fr;
+     }
+     .plans .plan_text_small{
+
+        font-size:1.7rem;
+        font-weight: 100;
+        margin-bottom: 0;
+        
+    }
+    .plan_card_header_primary{
+        height: 210px;
+        top: -50px;
+    }
+    
+    .plan_popular {
+        bottom: -30px;
+    }
+    .popular_body{
+        position: relative;
+        top:-50px;
+    }
+}
+
 
 /* Media  */
 
@@ -392,7 +459,9 @@ a {
  
        grid-template-columns: 1fr 1fr;
     }
+
 }
+
 
 
 .testimonial{
