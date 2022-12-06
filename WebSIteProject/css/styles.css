@@ -737,3 +737,20 @@ margin: 0;
 
     }
 }
+
+
+
+/* FEatures */
+.feature_heading{
+    margin: 1rem 0;
+    
+}
+
+.feature{
+    gap: 4rem 2rem;
+
+}
+
+.feature_image{
+    width: 100%;
+}
