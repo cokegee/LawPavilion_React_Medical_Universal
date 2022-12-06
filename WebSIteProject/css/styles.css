@@ -396,22 +396,12 @@ a {
         margin-bottom: 0;
         
     }
-    /* .plan_card_header_primary{
-        height: 210px;
-        top: -50px;
-    }
-    
-    .plan_popular {
-        bottom: -30px;
-    }
-    .popular_body{
-        position: relative;
-        top:-50px;
-    } */
+
     .plan_popular{
         transform: scale(1.1);
     }
 }
+
 
 
 /* Media  */
@@ -485,6 +475,7 @@ a {
 
 .testimonial{
     padding:3rem;
+    white-space: normal;
 
 }
 
@@ -656,6 +647,7 @@ margin: 0;
   
   .block_header {
     text-align: center;
+    margin-bottom: 4rem;
   }
   
   .block_heading {
@@ -665,6 +657,7 @@ margin: 0;
   .block_dark {
     background: #000;
     color: #7b858b;
+
   }
   
   .block_dark .block_heading {
